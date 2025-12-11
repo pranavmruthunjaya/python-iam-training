@@ -1,0 +1,21 @@
+scim:
+  base_url: "https://api.example.com/scim/v2"
+  users_endpoint: "/Users"
+  timeout_seconds: 5
+
+auth:
+  token_url: "https://auth.example.com/oauth/token"
+  client_id_env: "OAUTH_CLIENT_ID"
+  client_secret_env: "OAUTH_CLIENT_SECRET"
+
+database:
+  host_env: "MYSQL_HOST"
+  port_env: "MYSQL_PORT"
+  user_env: "MYSQL_USER"
+  password_env: "MYSQL_PASSWORD"
+  name_env: "MYSQL_DATABASE"
+
+
+sync:
+  batch_size: 50
+  max_retries: 3
